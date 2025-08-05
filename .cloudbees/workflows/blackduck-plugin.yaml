@@ -2,13 +2,9 @@ name: blackduck-hybrid-plugin
 kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 on:
-  # push:
-  #   branches:
-  #     - main
   workflow_dispatch:
   schedule:
     - cron: 30 3 * * 1-5
-  #   - cron: 30 10 * * *
 permissions:
   scm-token-own: read
   scm-token-org: read
